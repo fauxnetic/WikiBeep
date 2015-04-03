@@ -1,0 +1,5 @@
+#!/bin/bash
+
+airmon-ng stop mon0
+
+start network-manager

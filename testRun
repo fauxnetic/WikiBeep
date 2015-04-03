@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CHANNEL=1
+IFACE=wlan0
+
+stop network-manager
+
+airmon-ng start $IFACE $CHANNEL
+iwconfig mon0 channel $CHANNEL
+
+./wikibeep
