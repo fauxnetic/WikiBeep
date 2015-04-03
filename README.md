@@ -20,6 +20,7 @@ You will get partial detection for other wikipedia pages (i.e. actual articles r
 
 ## Dependencies:
 
+- Ubuntu Linux OS, or your ability to adapt it to another (details below).
 - The airmon-ng program must be installed. Part of the aircrack-ng tools package.
 - The tshark program must be installed. Part of the Wireshark suite.
 - Demo scripts assume an Ubuntu or Ubuntu-derivative OS. See below. 
@@ -50,9 +51,9 @@ Once you are monitoring a channel, use a device connected to that channel to acc
 
 In left-right column order the monitor program shows: the total number of frames monitored, time of latest update, horizontal graph in green showing incoming frames that indicate Wikipedia activity, horizontal graph in blue showing outgoing frames that indicate Wikipedia activity in the last 5 seconds. If both of these graphs exceed 10 indicating frames then a beep alert is emitted.
 
-See the included screenshot for more information.
+![Screenshot](https://github.com/fauxnetic/WikiBeep/blob/master/screenshot.png "WikiBeep Screenshot")
 
-If your platform does not have a system speaker included (like Raspberry Pi's) or enabled, then you will need to adapt the UIUpdater::update() method to your needs.
+If your platform does not have a system speaker included (like Raspberry Pi's) or enabled, then you will need to adapt the UIUpdater::alert() method to your needs.
 
 
 ### Cleanup
